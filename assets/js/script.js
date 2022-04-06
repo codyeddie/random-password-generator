@@ -7,7 +7,7 @@ var generatePassword = function() {
       if (passLength >= 8 && passLength <= 128) {
         passLength = passLength;
       } else {
-        window.alert("You need to enter a vaid number! Please try again.");
+        window.alert("You need to enter a valid number! Please try again.");
         return setPassLength();
       }
       return passLength;
@@ -56,7 +56,7 @@ var generatePassword = function() {
         passChars += numericChar;
       }  
       if (confirmations.specialCharChoose === true) {
-        passChars =+ specialChar;
+        passChars += specialChar;
       }
       console.log(passChars);
   
